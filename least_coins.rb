@@ -1,7 +1,13 @@
 #write out your code here
 
-def least_coins(cents)
 
-#Code your answer here!
+cents = 100
+least_coins = [
+  quarters => cents/25,
+  dimes => (cents - (25*quarters))/10,
+  nickels => (cents - (25*quarters) - (10*dimes))/5,
+  pennies => (cents-(25*quarters)-(10*dimes)-(5*nickels))/1,
+]
 
-end
+puts least_coins
+
